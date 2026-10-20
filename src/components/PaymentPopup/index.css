@@ -1,0 +1,164 @@
+.payment-popup {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.payment-popup-content {
+  width: 100%;
+}
+
+.payment-popup-title {
+  color: #1e293b;
+  font-size: 28px;
+  margin: 0 0 25px;
+  text-align: center;
+}
+
+.order-summary {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 25px;
+}
+
+.order-summary h2,
+.payment-methods h2 {
+  color: #334155;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #475569;
+  font-size: 15px;
+  padding: 8px 0;
+}
+
+.summary-row:last-child {
+  color: #0f172a;
+  font-size: 17px;
+  font-weight: 700;
+  border-top: 1px solid #e2e8f0;
+  margin-top: 5px;
+  padding-top: 13px;
+}
+
+.payment-methods {
+  margin-bottom: 25px;
+}
+
+.payment-option {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 0 14px;
+  margin-bottom: 10px;
+  color: #334155;
+  font-size: 15px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.payment-option:hover {
+  border-color: #0b69ff;
+  background-color: #eff6ff;
+}
+
+.payment-option input {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: #0b69ff;
+  cursor: pointer;
+}
+
+.payment-option span {
+  flex: 1;
+}
+
+.disabled-option {
+  background-color: #f8fafc;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.disabled-option input {
+  cursor: not-allowed;
+}
+
+.confirm-order-button {
+  width: 100%;
+  height: 46px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.confirm-order-button:hover:not(:disabled) {
+  background-color: #0958d9;
+}
+
+.confirm-order-button:disabled {
+  background-color: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.payment-close-button {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.payment-close-button:hover {
+  background-color: #e2e8f0;
+}
+
+.payment-success-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.order-success-message {
+  color: #15803d;
+  background-color: #dcfce7;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 18px 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .payment-popup {
+    padding: 25px 20px;
+  }
+
+  .payment-popup-title {
+    font-size: 24px;
+  }
+}
